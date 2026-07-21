@@ -3,11 +3,11 @@
 const productCards = document.querySelectorAll('.products__item');
 const changeColorAllCardButton= document.querySelector('#change-color-all-card');
 const greenColor = '#00ff00';
-const blueColor = '#1100ff'
+const blueColor = '#1100ff';
 
 changeColorAllCardButton.addEventListener('click', () => {
-  productCards.forEach((card) => card.style.backgroundColor = greenColor)
-})  
+  productCards.forEach((card) => card.style.backgroundColor = greenColor);
+});
 
 // Покраска первой карточки
 
@@ -15,8 +15,8 @@ const firstProductCard = document.querySelector('.products__item');
 const changeColorFirstCardButton= document.querySelector('#change-color-first-card');
  
 changeColorFirstCardButton.addEventListener('click', () => {
-  firstProductCard.style.backgroundColor = blueColor
-}) 
+  firstProductCard.style.backgroundColor = blueColor;
+});
 
 // Открыть google
 
@@ -28,23 +28,23 @@ function openGoogle() {
   const answer = confirm('Вы внатуре хотите открыть Google?');
 
   if (answer === true) {
-    window.open('https://google.com')
+    window.open('https://google.com');
   }
   else {
     return;
   }
-}
+};
 
 // Вывод консоль лог
 
 const outputLogButton = document.querySelector('#output-console-log');
 
-outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №4'))
+outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №4'));
 
 function outputConsoleLog(message) {
   console.log(message);
-  alert(10)
-}
+  alert(10);
+};
   
 
 //Вывод лога заголовка
@@ -52,8 +52,8 @@ function outputConsoleLog(message) {
 const outputTitle = document.querySelector('#title-console');
 
 outputTitle.addEventListener('mouseover', () => {
-  console.log(outputTitle.textContent)
-})
+  console.log(outputTitle.textContent);
+});
 
 
 //Кнопка, меняющая цвет
@@ -61,5 +61,5 @@ outputTitle.addEventListener('mouseover', () => {
 const buttonToggle = document.querySelector('#toggle-color-button');
 
 buttonToggle.addEventListener('click', () => {
-buttonToggle.classList.toggle('button-blue')
-})
+  buttonToggle.classList.toggle('button-blue');
+});
