@@ -11,11 +11,11 @@ showCityTemperature();
 
 const LIGHT_SPEED = 1079252849;
 
-function checkSpeed(currentSpeed=100000000) {
-  if (currentSpeed>1079252849) {
+function checkSpeed(currentSpeed) {
+  if (currentSpeed>LIGHT_SPEED) {
     console.log('Сверхсветовая скорость');
   }
-  else if (currentSpeed === 1079252849) {
+  else if (currentSpeed === LIGHT_SPEED) {
     console.log('Скорость света');
   }
   else {
@@ -45,17 +45,17 @@ buyProduct();
 
 // Сдача экзамена 
 
-const examBalls = 70;
-const name = 'Мухаммад'
+const examScore = 70;
+const name = 'Мухаммад';
 
 
 function checkExam(result) {
-if (result>=70) {
-  console.log(`Поздравляю, ${name}, вы сдали экзамен!`)
-}
-else {
-  console.log(`Сожалеем, ${name}, вы не сдали экзамен, ждем вас на пересдачу!`)
-}
+  if (result>=examScore) {
+    console.log(`Поздравляю, ${name}, вы сдали экзамен!`);
+  }
+  else {
+    console.log(`Сожалеем, ${name}, вы не сдали экзамен, ждем вас на пересдачу!`);
+  }
 }
 
 checkExam(65);
@@ -64,7 +64,7 @@ checkExam(75);
 // Использую стрелочную функцию для приветствия
 
 const saySalam = (name) => {
-  console.log(`Ас саляму алейкум, ${name}`)
+  console.log(`Ас саляму алейкум, ${name}`);
 }
 
-saySalam('Ибрагим')
+saySalam('Ибрагим');
